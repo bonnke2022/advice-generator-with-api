@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Manrope";
+  src: url(images/Manrope-VariableFont_wght.ttf) format("truetype");
+}
+:root {
+  /* ### Primary */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* ### Neutral */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+
+  --fs-280: 28px;
+  --ff-manrope: "Manrope";
+  --fw-800: 800;
+}
+.fs-280 {
+  font-size: var(--fs-280);
+}
+.ff-manrope {
+  font-family: var(--ff-manrope);
+}
+.fw-800 {
+  font-weight: var(--fw-800);
+}
+.text-color {
+  color: var(--Light-Cyan);
+}
+.text-neon {
+  color: var(--Neon-Green);
+}
+.bg-body {
+  background: var(--Dark-Blue);
+}
+.bg-container {
+  background: var(--Dark-Grayish-Blue);
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.flex {
+  display: flex;
+}
+img {
+  max-width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 400;
+}
+main {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  width: 90%;
+  max-width: 375px;
+  padding: 2rem 1rem;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 500px;
+    padding: 2rem;
+  }
+}
+.container * {
+  letter-spacing: 1.5px;
+}
+.btn {
+  background: var(--Neon-Green);
+  padding: 1rem;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: -4rem;
+}
