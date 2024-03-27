@@ -93,7 +93,7 @@ main {
 .container * {
   letter-spacing: 1.5px;
 }
-.dice {
+#dice-btn {
   background: var(--Neon-Green);
   padding: 1rem;
   border-radius: 50%;

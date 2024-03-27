@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Dice from "./images/Dice";
+import dice from "./images/Dice.svg";
 import DividerMobile from "./images/DividerMobile";
 import DividerDesktop from "./images/DividerDesktop";
 
@@ -29,8 +29,8 @@ const App = () => {
         <p className="fw-800">{`"${advice}"`}</p>
         <DividerMobile />
         <DividerDesktop />
-        <button onClick={fetchData} className="dice">
-          <Dice />
+        <button onClick={fetchData} id="dice-btn">
+          <img src={dice} alt="dice" className="dice" />
         </button>
       </div>
     </main>
