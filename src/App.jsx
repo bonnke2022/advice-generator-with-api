@@ -25,11 +25,11 @@ const App = () => {
   return (
     <main className="bg-body flex">
       <div className="container bg-container flex ff-manrope fs-280 text-color fw-800">
-        <h5 className="uppercase text-neon">advice #{id}</h5>
+        <h1 className="uppercase text-neon">advice #{id}</h1>
         <p className="fw-800">{`"${advice}"`}</p>
         <DividerMobile />
         <DividerDesktop />
-        <button type="button" onClick={fetchData} className="btn">
+        <button onClick={fetchData} className="btn">
           <Dice />
         </button>
       </div>
