@@ -29,7 +29,7 @@ const App = () => {
         <p className="fw-800">{`"${advice}"`}</p>
         <DividerMobile />
         <DividerDesktop />
-        <button onClick={fetchData} className="btn">
+        <button onClick={fetchData} className="dice">
           <Dice />
         </button>
       </div>
