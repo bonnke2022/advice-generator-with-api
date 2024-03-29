@@ -25,7 +25,7 @@ const App = () => {
   return (
     <main className="bg-body flex">
       <div className="container bg-container flex ff-manrope fs-280 text-color fw-800">
-        <h1 className="uppercase text-neon">advice #{id}</h1>
+        <span className="uppercase text-neon">advice #{id}</span>
         <p className="fw-800">{`"${advice}"`}</p>
         <DividerMobile />
         <DividerDesktop />
